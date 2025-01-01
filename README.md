@@ -2,6 +2,8 @@
 
 Esta é uma API simples desenvolvida para gerenciar projetos fictícios, com informações sobre versões, mudanças e colaborações. O objetivo é permitir o registro, listagem, e exclusão de projetos e versões, simulando um controle básico de versões de software.
 
+Recentemente, aprendi a usar o Git e o GitHub e, por isso, decidi criar uma API com o tema de controle de versões para aplicar esse conhecimento. 
+
 > **Status do Projeto**: Em desenvolvimento 🚧
 
 ## Funcionalidades
