@@ -20,6 +20,6 @@ Recentemente, aprendi a usar o Git e o GitHub e, por isso, decidi criar uma API 
 - **JSON**: Armazenamento simples dos dados (pode ser substituído por banco de dados no futuro).
 - **Git/GitHub**: Controle de versões e colaboração no desenvolvimento.
 
-## 🚀 Funcionalidades Implementadas
+## Funcionalidades Implementadas
 
 - [x] Cadastro de Projetos
