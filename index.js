@@ -1,7 +1,7 @@
 const express = require('express');
+const projetos = require('./database/database');
+const gerarId = require('./functions/idAleatorio');
 const app = express();
-const projetos = require('./database/database')
-const gerarId = require('./functions/idAleatorio')
 
 app.use(express.json())
 
