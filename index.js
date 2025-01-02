@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 const projetos = require('./database/database')
+const gerarId = require('./functions/idAleatorio')
 
 app.use(express.json())
 
@@ -10,6 +11,7 @@ app.get('/projetos', (req, res) => {
 
 app.post('/projetos', (req, res) => {
     const novoProjeto = {
+        id: gerarId(),
         nome: req.body.nome,
         descricao: req.body.descricao,
         dataCriacao: req.body.dataCriacao
