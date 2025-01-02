@@ -4,6 +4,10 @@ const projetos = require('./database/database')
 
 app.use(express.json())
 
+app.get('/projetos', (req, res) => {
+    res.json(projetos)
+})
+
 app.post('/projetos', (req, res) => {
     const novoProjeto = {
         nome: req.body.nome,
