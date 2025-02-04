@@ -33,6 +33,23 @@ app.post('/projetos', (req, res) => {
     res.send('Projeto Cadastrado com Sucesso!')
 })
 
+app.post('/projetos/id/:id', (req, res) => {
+    const { id } = req.params
+    const projeto = projetos.find((p) => p.id === id) 
+
+    if (!projeto) {
+        return res.status(404).send('Projeto Inexistente!')
+    }
+
+    const novaVersao = {
+        idVersao: req.body.idVersao,
+        descVersao: req.body.descVersao
+    }
+
+    projeto.versoes.push(novaVersao)
+    res.status(201).json({ mensagem: 'Versão adicionada com sucesso!', projeto })
+})
+
 app.listen(8081, () => {
     console.log('Servidor Rodando em http://localhost:8081')
 })
