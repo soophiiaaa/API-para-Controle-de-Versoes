@@ -23,3 +23,4 @@ Recentemente, aprendi a usar o Git e o GitHub e, por isso, decidi criar uma API 
 ## Funcionalidades Implementadas
 
 - [x] Cadastro de Projetos
+- [x] Registro de Versões
