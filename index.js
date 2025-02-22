@@ -50,6 +50,18 @@ app.post('/projetos/id/:id', (req, res) => {
     res.status(201).json({ mensagem: 'Versão adicionada com sucesso!', projeto })
 })
 
+app.delete('/projetos/:id', (req, res) => {
+    const { id } = req.params
+    const index = projetos.findIndex((p) => p.id === id) 
+
+    if (index !== -1) {
+        projetos.splice(index, 1)
+        return res.status(200).send('Projeto Excluído!')
+    }
+
+    return res.status(404).send('Projeto não encontrado!')
+})
+
 app.listen(8081, () => {
     console.log('Servidor Rodando em http://localhost:8081')
 })
