@@ -4,14 +4,14 @@ Esta é uma API simples desenvolvida para gerenciar projetos fictícios, com inf
 
 Recentemente, aprendi a usar o Git e o GitHub e, por isso, decidi criar uma API com o tema de controle de versões para aplicar esse conhecimento. 
 
-> **Status do Projeto**: Em desenvolvimento 🚧
+> **Status do Projeto**: Concluído ✅
 
 ## Funcionalidades
 
 - **Cadastro de projetos**: Permite criar novos projetos com nome e descrição.
 - **Registro de versões**: Adiciona novas versões para um projeto, com a descrição das mudanças.
 - **Listagem de projetos**: Exibe todos os projetos registrados, com suas respectivas versões.
-- **Exclusão de projetos e versões**: Possibilita a remoção de um projeto ou de uma versão específica de um projeto.
+- **Exclusão de projetos**: Possibilita a remoção de um projeto ou de uma versão específica de um projeto.
 
 ## Tecnologias
 
@@ -25,3 +25,4 @@ Recentemente, aprendi a usar o Git e o GitHub e, por isso, decidi criar uma API 
 - [x] Cadastro de Projetos
 - [x] Registro de Versões
 - [x] Listagem de Projetos
+- [x] Exclusão de Projetos
